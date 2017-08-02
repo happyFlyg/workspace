@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+body{
+	background:#393D49;
+	background:url('headBj.jpg');
+}
+div{
+	width: 100%;
+	height:100%;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+div img{
+	margin-top:17px;
+	margin-left:30px;
+}
+ul{
+	font-size:17px;
+	color:white;
+	cursor:pointer;
+	margin-top:36px;
+	float:right;
+	margin-right:30px;
+}
+li{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin-right:20px;
+}
+li:hover,li:hover a{
+	color:#3fdef1;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+}
+.down{
+	text-decoration:none;
+	color:#fff;
+}
+.logo-title{
+	font-size:30px;
+	font-weight: bold;
+	color:#fff;
+	line-height: 100px;
+	letter-spacing: 3px
+}
+/**
+ * 修改密码
+ */
+#setPwForm,
+#setPeizhiForm {
+    background: #fff;
+    position: fixed;
+    top: 75px;
+    right: 40px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #0a6999;
+    padding: 0 10px 10px;
+    display: none;
+    z-index: 999999999;
+}
+
+#setPeizhiForm {
+    right: 205px;
+    height: 330px;
+}
+
+.titleArrow {
+    position: relative;
+    top: -20px;
+    left: 60%;
+    width: 0;
+    height: 0;
+    border: 10px solid #fff;
+    border-color: transparent transparent #fff transparent;
+}
+
+.titleZi {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.row td {
+    /*padding-top: 15px;*/
+    font-size: 14px;
+}
+
+.nostyle td {
+    padding-top: 15px;
+}
+
+input#passwordConfirm,
+#password {
+    width: 200px;
+    margin-left: 10px;
+}
+/**
+ * 修改密码 end
+ */

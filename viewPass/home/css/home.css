@@ -1,0 +1,9 @@
+#mainPie{
+	height:50%;
+	width:100%;
+}
+#dayOptionData,#workOption{
+	float:left;
+	width:50%;
+	height:50%
+}

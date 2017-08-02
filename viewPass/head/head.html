@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../plugin/hui/iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="head.css" />
+    <title>head</title>
+</head>
+
+<body style="overflow: auto;">
+    <div class="cl headBj">
+        <img class="l" src="logo.png" />
+        <span class="logo-title">警务监督系统</span>
+        <ul>
+            <li>
+                <i class="Hui-iconfont">&#xe60d;</i> admin
+            </li>
+            <li><i class="Hui-iconfont">&#xe690;</i> 上次登录：2017-08-01 09:28
+            </li>
+            <li id="setPw">
+                <i class="Hui-iconfont">&#xe63f;</i> 修改密码
+            </li>
+            <li id="exitBtn" onclick="exit()">
+                <i class="Hui-iconfont">&#xe644;</i> 退出
+            </li>
+        </ul>
+    </div>
+    <form id="setPwForm" action="" method="post">
+         <div class="titleArrow"></div>
+         <div class="titleZi">修改个人密码</div>
+         <table class="nostyle">
+         <tbody>
+         <tr class="row">
+            <td>新 密 码：</td><td>
+            <input type="password" id="password" name="password" size="30" class="input-text required alphanumeric"/>
+         </td></tr>
+         <tr class="row">
+            <td>确认密码:</td><td>
+            <input type="password" id="passwordConfirm" class="input-text" name="passwordConfirm" size="30" equalto="#password"/>
+         </td></tr>
+         <tr>
+         </tr>
+         <tr class="row">
+         <td align="center" colspan="2">
+               <input class="btn btn-success radius" id="setPwSave" type="button" value="保  存"/>
+               <input class="btn btn-primary radius" id="cancelSetPw" type="button" name="button2" onclick="" value="取 消"/>
+            </td></tr>
+         </tbody>
+         </table>
+   </form>
+</body>
+<script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../common/js/common.js"></script>
+<script type="text/javascript" src="head.js"></script>
+</html>

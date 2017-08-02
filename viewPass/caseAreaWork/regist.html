@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=11;IE=10;IE=EDGE">
+<link rel="stylesheet" href="../common/css/common.css" />
+<link rel="stylesheet" href="../plugin/hui/iconfont/iconfont.css" />
+<link rel="stylesheet" href="../plugin/hui/H-ui.min.css" />
+<title>出入登记</title>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../plug-in/html5.js"></script>
+<script type="text/javascript" src="../plug-in/respond.min.js"></script>
+<script type="text/javascript" src="../plug-in/PIE_IE678.js"></script>
+<![endif]-->
+</head>
+<body>
+ <div class="page-container">
+    <div class="text-c">
+        &nbsp;&nbsp;组织机构：
+        <span class="select-box inline">
+			<select name="" class="select">
+				<option value="0">XXX检察院</option>
+				<option value="1">2</option>
+				<option value="2">3</option>
+			</select>
+		</span>
+        &nbsp;&nbsp;值班员：
+        <input type="text" name="" id="" style="width:150px" class="input-text">
+        &nbsp;&nbsp;日期范围：
+        <input type="text" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}'})" id="logmin" class="input-text Wdate" style="width:120px;"> -
+        <input type="text" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d'})" id="logmax" class="input-text Wdate" style="width:120px;">
+        
+        <button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
+    </div>
+ 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"> <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" href="javascript:;" onclick="admin_role_add('添加','admin-role-add.html','800')"><i class="Hui-iconfont">&#xe600;</i> 添加</a> </span> <span class="r">共有数据：<strong>1</strong> 条</span> </div>
+ 	<table class="table table-border table-bordered table-hover table-bg">
+ 		<thead>
+ 			<tr class="text-c">
+ 				<th width="40">序号</th>
+ 				<th width="200">用警编号</th>
+ 				<th width="100">姓名</th>
+                <th>单位</th>
+                <th>事由摘要</th>
+ 				<th>出入证号</th>
+ 				<th width="120">进入时间</th>
+ 				<th width="120">离开时间</th>
+                <th width="100">带班领导</th>
+                <th width="100">值班人员</th>
+ 				<th width="70">状态</th>
+                <th width="70">操作</th>
+ 			</tr>
+ 		</thead>
+ 		<tbody>
+ 			<tr class="text-c">
+ 				<td>1</td>
+ 				<td class="btn-link">20180122</td>
+                <td>张三</td>
+                <td>市纪委</td>
+ 				<td>XXXXXXXXXXXXXXXXXXXXXXX</td>
+ 				<td>—</td>
+ 				<td>2018-1-22 08:30:20</td>
+ 				<td>2018-1-22 18:30:20</td>
+                <td>小刘</td>
+                <td>张总</td>
+ 				<td>已离开</td>
+                <td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','admin-role-add.html','1')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+ 			</tr>
+ 		</tbody>
+ 	</table>
+ </div>
+<script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../plugin/layer/layer.js"></script> 
+<script type="text/javascript" src="../plugin/My97DatePicker/WdatePicker.js"></script> 
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="main/main.js"></script>
+</body>
+</html>
