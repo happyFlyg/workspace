@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=11;IE=10;IE=EDGE">
+<link type="text/css" rel="SHORTCUT ICON" href="icon/ico.ico">
+<link type="text/css" rel="stylesheet" href="common/css/common.css">
+<link type="text/css" rel="stylesheet" href="main/main.css">
+<title>检务督察系统</title>
+</head>
+<body>
+	<iframe id="headIframe" name="headIframe" src="head/head.html" scrolling="no" frameborder="no" border="0" marginwidth="0" marginheight="0">
+	</iframe>
+	<div id="mainIframe" style="height: 785px; position: relative; top: 0px; left: 0px;">
+		<iframe id="menuIframe" name="menuIframe" src="aside/aside.html" scrolling="no" frameborder="no" border="0" marginwidth="0" marginheight="0">
+		</iframe>
+		<iframe id="contentFrame" name="contentFrame" src="" frameborder="no" border="0" scrolling="auto" marginwidth="0" marginheight="0">
+		</iframe>
+	</div>
+	<button id="updatePwSuccessBtn" class="none" onclick="openUpdatePwSuccessWin()"></button>
+	<button id="openIframeBtn" class="none" onclick="openIframe(this)" width="450px" height="200px" title="修改密码" target="policemanController.do?gotoUpdatePw"></button>
+	<button id="closeIframeBtn" class="none" onclick="closeIframe()"></button>
+
+<script type="text/javascript" src="plugin/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="main/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=11;IE=10;IE=EDGE">
+<link rel="stylesheet" href="../common/css/common.css" />
+<link rel="stylesheet" href="../plugin/hui/iconfont/iconfont.css" />
+<link rel="stylesheet" href="../plugin/hui/H-ui.min.css" />
+<title>问题记录</title>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../plug-in/html5.js"></script>
+<script type="text/javascript" src="../plug-in/respond.min.js"></script>
+<script type="text/javascript" src="../plug-in/PIE_IE678.js"></script>
+<![endif]-->
+</head>
+<body>
+ <div class="page-container">
+    <div class="text-c">
+        &nbsp;&nbsp;日期范围：
+        <input type="text" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}'})" id="logmin" class="input-text Wdate" style="width:120px;"> -
+        <input type="text" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d'})" id="logmax" class="input-text Wdate" style="width:120px;">
+        
+        <button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
+        <button name="" id="" class="btn btn-primary" type="submit"><i class="Hui-iconfont">&#xe665;</i> 导出</button>
+    </div>
+ 	<div class="cl pd-5 bg-1 bk-gray mt-20"><span class="r">共有数据：<strong>1</strong> 条</span> </div>
+ 	<table class="table table-border table-bordered table-hover table-bg">
+ 		<thead>
+ 			<tr class="text-c">
+ 				<th width="40">编号</th>
+ 				<th width="200">单位</th>
+ 				<th width="120">时间</th>
+                <th width="100">证据</th>
+                <th>描述</th>
+ 			</tr>
+ 		</thead>
+ 		<tbody>
+ 			<tr class="text-c">
+ 				<td>1</td>
+                <td></td>
+ 				<td>2018-1-22 08:30:20</td>
+                <td><img src="../images/111.jpg" width="100px"></td>
+                <td></td>
+ 			</tr>
+ 		</tbody>
+ 	</table>
+ </div>
+<script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../plugin/layer/layer.js"></script> 
+<script type="text/javascript" src="../plugin/My97DatePicker/WdatePicker.js"></script> 
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="main/main.js"></script>
+</body>
+</html>

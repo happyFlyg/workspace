@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../plugin/hui/iconfont/iconfont.css" />
+	<link rel="stylesheet" href="aside.css" />
+	<title>左侧边栏</title>
+</head>
+<body>
+	<ul>
+		<li onclick="gotoLink(this)" target="../home/home.html"><i class="Hui-iconfont">&#xe625;</i>首页</li>
+		<li onclick="gotoLink(this)" target="../user/user.html">
+			<i class="Hui-iconfont">&#xe61d;</i>授权管理
+			<ul class="second-level">
+		        <li onclick="gotoLink(this)" target="../user/user.html">用户管理</li>
+		        <li onclick="gotoLink(this)" target="../role/role.html">角色管理</li>
+		        <li onclick="gotoLink(this)" target="../power/power.html">权限管理</li>
+		    </ul>
+		</li>
+		<li onclick="gotoLink(this)" target="../pictureVideo/picture.html">
+			<i class="Hui-iconfont">&#xe613;</i>图片视频管理
+			<ul class="second-level">
+		        <li onclick="gotoLink(this)" target="../pictureVideo/picture.html">图片管理</li>
+		        <li onclick="gotoLink(this)" target="../pictureVideo/video.html">视频管理</li>
+		    </ul>
+		</li>
+		<li onclick="gotoLink(this)" target="../issuesFind/issuesFind.html">
+			<i class="Hui-iconfont">&#xe633;</i>问题发现
+		</li>
+		<li onclick="gotoLink(this)" target="../issuesRecord/issuesRecord.html">
+			<i class="Hui-iconfont">&#xe692;</i>问题记录
+		</li>
+		<li onclick="gotoLink(this)" target="../log/log.html">
+			<i class="Hui-iconfont">&#xe623;</i>日志管理
+		</li>
+	</ul>
+</body>
+<script src="../plugin/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../common/js/common.js"></script>
+<script src="aside.js"></script>
+</html>

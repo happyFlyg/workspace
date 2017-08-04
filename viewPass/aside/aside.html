@@ -10,7 +10,13 @@
 <body>
 	<ul>
 		<li onclick="gotoLink(this)" target="../home/home.html"><i class="Hui-iconfont">&#xe625;</i>首页</li>
-		<li onclick="gotoLink(this)" target="../serviceSuper/serviceSuper.html"><i class="Hui-iconfont">&#xe650;</i>勤务监督</li>
+		<li onclick="gotoLink(this)" target="../serviceSuper/serviceSuper.html">
+			<i class="Hui-iconfont">&#xe650;</i>勤务监督
+			<ul>
+				<li>实时监督</li>
+				<li>监督记录</li>
+			</ul>
+		</li>
 		<li onclick="gotoLink(this)" target="../callPolice/policeAudit.html">
 		    <i class="Hui-iconfont">&#xe62b;</i>用警派警
 		    <ul class="second-level">
@@ -58,7 +64,6 @@
 		        <li>年统计分析</li>
 		    </ul>
 		</li>
-		
 		<li onclick="gotoLink(this)" target="../check/fill.html">
 		    <i class="Hui-iconfont">&#xe60c;</i>勤务考核
 		    <ul class="second-level">
@@ -67,8 +72,18 @@
 		    	<li>考核查询</li>
 		    </ul>
 		</li>
-		<li onclick="gotoLink(this)">
-		    <i class="Hui-iconfont">&#xe61d;</i>系统维护
+		<li onclick="gotoLink(this)" target="../residenceMonitor/monitorPeople.html">
+		    <i class="Hui-iconfont">&#xe624;</i>居所监视
+		    <ul class="second-level">
+		    	<li onclick="gotoLink(this)" target="../residenceMonitor/monitorPeople.html">监视对象管理</li>
+		    	<li>执勤干警管理</li>
+		    </ul>
+		</li>
+		<li onclick="gotoLink(this)" target="../baseMsg/emergencyTeam.html">
+		    <i class="Hui-iconfont">&#xe6c5;</i>基础信息
+		    <ul class="second-level">
+		    	<li onclick="gotoLink(this)" target="../baseMsg/emergencyTeam.html">应急小组</li>
+		    </ul>
 		</li>
 	</ul>
 </body>
