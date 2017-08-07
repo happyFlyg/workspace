@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>检视通综合管理平台登录</title>
+</head>
+
+<body>
+    <div class="loginWrapper">
+        <div class="contentWrap">
+            <form class="loginForm marAuto">
+                <div class="text-c">
+                    <i class="loginIcon userIcon iconfont">&#xe601;</i>
+                    <input id="userName" type="text" />
+                    <label for="userName" class="placHd userName">用户名</label>
+                </div>
+                <div class="text-c">
+                    <i class="loginIcon pwdIcon iconfont">&#xe600;</i>
+                    <input id="pwd" type="text" />
+                    <label for="pwd" class="placHd pwd">密码</label>
+                </div>
+                <!-- 验证码 -->
+                <div class="text-c">
+                    <i class="loginIcon identifyIcon iconfont">&#xe633;</i>
+                    <input id="identifyCode" type="text" />
+                    <label for="identifyCode" class="placHd identifyCode">验证码</label>
+                    <div id="identifyCodeImg">XW021</div>
+                </div>
+                <div class="loginBtnWrapper">
+                    <input id="remindPassword" type="checkbox" />
+                    <label for="remindPassword" class="rembPwdLabel">记住密码</label>
+                    <input id="loginBtn" type="button" value="登录" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../plugin/jquery/1.9.1/jquery.min.js"></script>
+<script src="../plugin/layer/layer.js"></script>
+<script src="js/login.js"></script>
+
+</html>
